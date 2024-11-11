@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 04e7abc878fb92f4e9d2dd001cb687e0
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - player: {fileID: 4823876174208220166, guid: d86f4c310c9a4a944bb587d97e12ee62, type: 3}
+  - enemy: {fileID: 2418000477130677772, guid: 8ae6f883836913c41b5f6112370dbb43, type: 3}
+  - cloud: {fileID: 2983865903246181168, guid: a1373beff1a34ba44925669a729c7a00, type: 3}
+  - coin: {fileID: 3948913141209004569, guid: 8ac04262706b07844a204dda2ff6d556, type: 3}
+  - scoreText: {instanceID: 0}
+  - livesText: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
