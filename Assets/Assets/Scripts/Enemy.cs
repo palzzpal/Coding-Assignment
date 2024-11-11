@@ -4,13 +4,16 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-
+    public GameObject gameManager;
     public GameObject explosion;
     public GameObject target;
     // Start is called before the first frame update
     void Start()
     {
-        
+        if (gameManager == null)
+        {
+            gameManager = GameObject.Find("GameManager");
+        }
     }
 
     // Update is called once per frame
@@ -25,6 +28,7 @@ public class Enemy : MonoBehaviour
         {
             GameObject.Find("Player(Clone)").GetComponent<Player>().LoseALife();
             Instantiate(explosion, transform.position, Quaternion.identity);
+            gameManager.GetComponent<GameManager>().LoseLife();
             Destroy(this.gameObject);
         } else if (whatDidIHit.tag == "Weapon")
         {

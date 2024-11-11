@@ -61,7 +61,7 @@ public class GameManager : MonoBehaviour
 
     public void LoseLife()
     {
-        lives--;
+        lives = lives - 1;
         livesText.text = "Lives: " + lives;
     }
 }
